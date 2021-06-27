@@ -1,11 +1,12 @@
 import React, { Suspense, lazy } from "react";
 import { NavLink, Route } from "react-router-dom";
 import PropTypes from "prop-types";
+import "./Information.css";
 const Cast = lazy(() => import("../Cast/Cast.js"));
 const Reviews = lazy(() => import("../Reviews/Reviews.js"));
 const Informational = ({ match }) => {
   return (
-    <div>
+    <div className="Informational">
       <h2>Additional information</h2>
       <ul>
         <li>

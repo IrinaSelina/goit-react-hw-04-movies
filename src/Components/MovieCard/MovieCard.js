@@ -9,6 +9,7 @@ const MovieCard = ({
   overview,
   genres,
 }) => {
+  const average = Math.round((vote_average / 10) * 100);
   return (
     <div>
       <img src={backdrop_path} alt={original_title} />
@@ -16,7 +17,7 @@ const MovieCard = ({
         <h1>
           {original_title} <span>({release_date})</span>
         </h1>
-        <p>User score: {vote_average}%</p>
+        <p>User score: {average}%</p>
         <h2>Overview</h2>
         <p>{overview}</p>
         <h3>Genres</h3>

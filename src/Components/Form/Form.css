@@ -1,0 +1,29 @@
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+}
+.form-input {
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-right: 15px;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-button {
+  background: transparent;
+  border: 1px solid #232323;
+  border-radius: 10px;
+  position: relative;
+  letter-spacing: 0.3em;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 17px 34px 17px 39px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}

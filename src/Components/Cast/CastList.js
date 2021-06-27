@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import "./CastList.css";
 
 const CastList = ({ cast }) => {
   return (
@@ -7,7 +8,11 @@ const CastList = ({ cast }) => {
       {cast.map(({ id, profile_path, name, character }) => (
         <li key={id}>
           <img
-            src={`https://image.tmdb.org/t/p/w300${profile_path}`}
+            src={
+              profile_path != null
+                ? `https://image.tmdb.org/t/p/w300${profile_path}`
+                : "#"
+            }
             alt={name}
           />
           <p>{name}</p>
