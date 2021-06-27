@@ -1,12 +1,18 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const MovieCard = ({ original_title, backdrop_path, release_date,vote_average, overview, genres}) => {
+const MovieCard = ({
+  original_title,
+  backdrop_path,
+  release_date,
+  vote_average,
+  overview,
+  genres,
+}) => {
   return (
-     <div >
+    <div>
       <img src={backdrop_path} alt={original_title} />
-      <div >
-        
+      <div>
         <h1>
           {original_title} <span>({release_date})</span>
         </h1>
@@ -22,5 +28,13 @@ const MovieCard = ({ original_title, backdrop_path, release_date,vote_average, o
       </div>
     </div>
   );
+};
+MovieCard.propTypes = {
+  original_title: PropTypes.string.isRequired,
+  backdrop_path: PropTypes.string,
+  release_date: PropTypes.string,
+  vote_average: PropTypes.number,
+  overview: PropTypes.string.isRequired,
+  genres: PropTypes.array.isRequired,
 };
 export default MovieCard;

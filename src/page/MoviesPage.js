@@ -15,6 +15,9 @@ class MoviesPage extends PureComponent {
     const { history, location } = this.props;
     const { search } = this.props.location;
     const query = search.slice(1);
+    if (query.length === 0) {
+      return;
+    }
 
     const options = {
       path: "search/movie",

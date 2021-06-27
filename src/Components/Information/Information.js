@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { NavLink, Route } from "react-router-dom";
-// import Cast from "../Cast/Cast";
-// import Reviews from "../Reviews/Reviews";
+import PropTypes from "prop-types";
 const Cast = lazy(() => import("../Cast/Cast.js"));
 const Reviews = lazy(() => import("../Reviews/Reviews.js"));
 const Informational = ({ match }) => {
@@ -34,5 +33,8 @@ const Informational = ({ match }) => {
       </Suspense>
     </div>
   );
+};
+Informational.propTypes = {
+  match: PropTypes.object.isRequired,
 };
 export default Informational;

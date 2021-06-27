@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const CastList = ({ cast }) => {
   return (
@@ -15,5 +16,8 @@ const CastList = ({ cast }) => {
       ))}
     </ul>
   );
+};
+CastList.propTypes = {
+  cast: PropTypes.array.isRequired,
 };
 export default CastList;

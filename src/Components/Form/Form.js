@@ -19,4 +19,9 @@ const Form = ({ onSetQuery, searchQuery, onSubmit }) => {
     </form>
   );
 };
+Form.propTypes = {
+  onSetQuery: PropTypes.func,
+  onSubmit: PropTypes.func,
+  searchQuery: PropTypes.string,
+};
 export default Form;
