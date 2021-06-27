@@ -1,0 +1,102 @@
+.poster {
+  padding: 10px 15px 14px;
+  font-family: "Arial", "Helvetica";
+  position: relative;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.header {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 17px;
+}
+
+.header-link {
+  color: #22c;
+  text-decoration-line: none;
+}
+
+.header-link:hover {
+  color: #d00;
+}
+
+.poster-body {
+  position: relative;
+}
+
+.left-block {
+  position: absolute;
+}
+
+.image {
+  display: block;
+}
+
+.play-btn {
+  position: absolute;
+  text-align: center;
+  left: 4px;
+  bottom: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-play {
+  margin-top: -5px; /* half of svg height */
+  padding-top: 50%;
+  padding-left: 2px;
+}
+
+.right-block {
+  margin-left: 73px;
+}
+
+.desc {
+  font-size: 13px;
+  line-height: 20px;
+  color: #333;
+}
+
+.info {
+  margin: 7px 0;
+}
+
+.button {
+  display: table-cell;
+  border-radius: 3px;
+  border-width: 1px;
+  border: 1px solid rgba(159, 127, 0, 0.8);
+  background-color: #ffdb4d;
+  padding: 0 20px;
+  height: 36px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.button-text {
+  font-size: 14px;
+  text-decoration-line: none;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #ffdb4d;
+  border-color: rgba(191, 153, 0, 0.8);
+}
+
+.button:active {
+  background-color: #ffcc00;
+  border-color: rgba(159, 127, 0, 0.8);
+}
+
+.link {
+  color: #669;
+  text-decoration-line: none;
+}
+
+.link:hover {
+  color: #d00;
+}
