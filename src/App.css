@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+.NavLink {
+  font-size: 20px;
+  color: black;
+}
+.NavLink-active {
+  color: blue;
+}
