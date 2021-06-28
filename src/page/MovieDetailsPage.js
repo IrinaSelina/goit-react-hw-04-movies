@@ -1,6 +1,6 @@
 import React from "react";
 import { PureComponent } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import moviesApi from "../api/moviesApi";
 import MovieCard from "../Components/MovieCard/MovieCard";
 import Button from "../Components/Button/Button";
@@ -37,8 +37,14 @@ class MovieDetailsPage extends PureComponent {
   handleOnClick = () => {
     // window.history.back();
     const { location, history } = this.props;
-    console.log(location.state.from);
+    // console.log(location.state.from);
+    // console.log(this.props.history);
     history.push(location.state.from, { search: location.state.search });
+    // if (location && location.state && location.state.from) {
+    //   history.push(location.state.from, { search: location.state.search });
+    //   return;
+    // }
+    // history.push("/");
   };
   render() {
     const {

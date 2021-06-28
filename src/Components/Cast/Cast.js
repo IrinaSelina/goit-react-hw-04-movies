@@ -8,6 +8,9 @@ class Cast extends PureComponent {
     cast: [],
   };
   componentDidMount() {
+    // const { location, history } = this.props;
+
+    // history.push(location.state.from, { search: location.state.search });
     const options = {
       path: "movie/",
       id: this.props.match.params.movieId,

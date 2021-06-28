@@ -1,9 +1,10 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./MoviesList.css";
 
-const MoviesList = ({ movies, location }) => {
+const MoviesList = ({ movies }) => {
+  const location = useLocation();
   return (
     <ul className="moviesList">
       {movies.map(({ id, original_title }) => (
